@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Color palette variables */
+:root {
+  --color-bg: #CCDBDC;
+  --color-accent: #9AD1D4;
+  --color-primary: #003249;
+  --color-secondary: #80CED7;
+  --color-text: #007EA7;
+  --color-bg-dark: #c5d8d8;
+  --color-nav-bg: #66a1be;
+}
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: #FAF8F1;
+  color: #334443;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  height: 100%;
+  background: var(--color-primary);
+}
+
+@media only screen and (max-width: 600px) {
+  .app-container {
+    background-color: lightblue;
+  }
+}
+
+@media (max-width: 50vw) {
+  html {
+    font-size: 0.4rem;
+  }
+}

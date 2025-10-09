@@ -1,0 +1,71 @@
+.top-nav-bar {
+  width: 100%;
+  background: var(--color-nav-bg);
+  display: flex;
+  justify-content: center; /* changed from center */
+  align-items: center;
+  padding: 0rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  position: sticky;
+  height: 8vh;
+  top: 0;
+  z-index: 1000;
+}
+.top-nav-bar ul {
+  list-style: none;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* changed from space-around */
+  align-items: center;
+  width: 100%;
+  
+}
+.top-nav-bar ul li {
+  border-radius: 10px;
+  transition: background 0.2s;
+  /* padding-top: 1rem; */
+}
+.top-nav-bar ul li:hover {
+  background: var(--color-secondary);
+  
+}
+.nav-item {
+  display: flex;
+  flex: 1; /* changed from width: 10% */
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-icon {
+  font-size: 0.5rem;
+  color: var(--color-primary);
+  border-radius: 50%;
+  /* padding: 0.5rem; */
+  
+}
+.nav-label {
+  /* margin-top: 0.25rem; */
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  font-weight: 450;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.top-nav-bar ul li:hover .nav-label {
+  opacity: 1;
+}
+.main-content {
+  overflow: auto;
+  width: 100%;
+  box-sizing: border-box;
+  /* Removed: margin: 0 auto; */
+  /* Optional: set a max height if needed */
+  /* max-height: 80vh; */
+  /* Optional: always show vertical scrollbar */
+  /* overflow-y: scroll; */
+}
