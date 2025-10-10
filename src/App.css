@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* Color palette variables */
-/* :root {
+:root {
   --color-bg: #CCDBDC;
   --color-accent: #9AD1D4;
   --color-primary: #003249;
@@ -9,17 +9,17 @@
   --color-text: #007EA7;
   --color-bg-dark: #c5d8d8;
   --color-nav-bg: #66a1be;
-} */
-
-:root {
-  --color-bg: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAcElEQVR4AYTPUQ6AMAgEUeKVuP8Reid5pJj61aSrw7A28YmIrJzHLD+nuA6jYBY8q6U4g4XCzJjreYqEBYkFc82KgLDA3jJsl4rkNYr9xW7ijTHs5u9nSEIJC+aa3UgIYYEFczgUiR7qYWEWXKpPvgAAAP//JYTdjAAAAAZJREFUAwA0uxbhy7VyUAAAAABJRU5ErkJggg==) repeat center/cover ;
-  --color-accent: #ECFFB0;
-  --color-primary: #9AA899;
-  --color-secondary: #54577C;
-  --color-text: #4A7B9D;
-  --color-bg-dark: #512D38;
-  --color-nav-bg: #ECFFB0;
 }
+
+/* :root {
+  --color-bg: #FCF9EA;
+  --color-accent: #FFBDBD;
+  --color-primary: #E1AA7D;
+  --color-secondary: #FFBDBD;
+  --color-text: #FFBDBD;
+  --color-bg-dark: #FFA4A4;
+  --color-nav-bg: #FFA4A4;
+} */
 
 html {
   font-size: 1rem;
