@@ -1,49 +1,34 @@
 import './MainContent.css';
-import Accordion from './components/Accordion';
+import { useState } from 'react';
 import TopNavBar from './TopNavBar';
+import ResumePage from './ResumePage';
+import AboutMePage from './AboutMePage';
+import PortfolioPage from './PortfolioPage';
+import ContactPage from './ContactPage';
+import HomePage from './HomePage';
 
 export default function MainContent() {
+    const [selectedTab, setSelectedTab] = useState(2);
+
+    const handleTabSelect = (index) => {
+        setSelectedTab(index);
+    };
+
+    let tabContent;
+    if (selectedTab === 0) tabContent = <HomePage />;
+    else if (selectedTab === 1) tabContent = <AboutMePage />;
+    else if (selectedTab === 2) tabContent = <ResumePage />;
+    else if (selectedTab === 3) tabContent = <PortfolioPage />;
+    else if (selectedTab === 4) tabContent = <ContactPage />;
+
     return (
         <div style={{ width: '100%' }}>
-            <TopNavBar />
-            <main className="main-content">
-                <section className="cv-section">
-                    <h1>Experience</h1>
-                    <Accordion title="Senior Frontend Developer at TechCorp (2022–Present)">
-                        <ul>
-                            <li>Lead UI/UX for enterprise dashboard</li>
-                            <li>Mentored 5 junior developers</li>
-                            <li>React, Redux, Vite, CSS-in-JS</li>
-                        </ul>
-                    </Accordion>
-                    <Accordion title="Frontend Developer at Webify (2020–2022)">
-                        <ul>
-                            <li>Built marketing sites and landing pages</li>
-                            <li>Worked with designers to implement pixel-perfect layouts</li>
-                            <li>React, SASS, Webpack</li>
-                        </ul>
-                    </Accordion>
-                </section>
-                <section className="cv-section">
-                    <h1>Education</h1>
-                    <Accordion title="B.Sc. in Computer Science, State University (2016–2020)">
-                        <ul>
-                            <li>Graduated with Honors</li>
-                            <li>Relevant coursework: Algorithms, Web Development, Databases</li>
-                        </ul>
-                    </Accordion>
-                </section>
-                <section className="cv-section">
-                    <h1>Skills</h1>
-                    <ul className="cv-skills-list">
-                        <li>React</li>
-                        <li>JavaScript</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>Vite</li>
-                    </ul>
-                </section>
-            </main>
+            <TopNavBar func={handleTabSelect} />
+            <div className='content-area'>
+                <div key={selectedTab} className="tab-transition tab-fade-in">
+                    {tabContent}
+                </div>
+            </div>
         </div>
     );
 }

@@ -1,0 +1,27 @@
+.main-content {
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: start;
+  min-height: 92vh; /* Adjust based on your navbar height */
+  overflow-y: auto;
+}
+.aboutme-flex {
+  display: flex;
+  width: 100%;
+}
+
+.aboutme-left {
+  flex: 0 0 60%;
+  padding: 0 2rem;
+}
+
+.aboutme-right {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info-item {
+  margin-bottom: 0.75rem;
+}

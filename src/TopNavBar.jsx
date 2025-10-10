@@ -1,38 +1,38 @@
 import './TopNavBar.css';
 
-export default function TopNavBar() {
+export default function TopNavBar({ func }) {
     return (
     <nav className="top-nav-bar">
       <ul>
-        <li className="nav-item">
+        <li className="nav-item" onClick={() => func(0)}>
           <span className="nav-icon">
             {/* Home icon */}
            <img src="home.svg" style={{ width: '24px', height: '24px' }} alt="" />
           </span>
           <span className="nav-label">Home</span>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" onClick={() => func(1)}>
           <span className="nav-icon">
             {/* User icon */}
             <img src="aboutme.svg" style={{ width: '24px', height: '24px' }} alt="" />
           </span>
           <span className="nav-label">About me</span>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" onClick={() => func(2)}>
           <span className="nav-icon">
             {/* Document icon */}
             <img src="resume.svg" style={{ width: '24px', height: '24px' }} alt="" />
           </span>
           <span className="nav-label">Resume</span>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" onClick={() => func(3)}>
           <span className="nav-icon">
             {/* Portfolio/Briefcase icon */}
             <img src="portfolio.svg" style={{ width: '24px', height: '24px' }} alt="" />
           </span>
           <span className="nav-label">Portfolio</span>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" onClick={() => func(4)}>
           <span className="nav-icon">
             {/* Contact/Mail icon */}
             <img src="mail.svg" style={{ width: '24px', height: '24px' }} alt="" />
