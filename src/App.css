@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* Color palette variables */
-:root {
+/* :root {
   --color-bg: #CCDBDC;
   --color-accent: #9AD1D4;
   --color-primary: #003249;
@@ -9,17 +9,17 @@
   --color-text: #007EA7;
   --color-bg-dark: #c5d8d8;
   --color-nav-bg: #66a1be;
-}
-
-/* :root {
-  --color-bg: #FCF9EA;
-  --color-accent: #FFBDBD;
-  --color-primary: #E1AA7D;
-  --color-secondary: #FFBDBD;
-  --color-text: #FFBDBD;
-  --color-bg-dark: #FFA4A4;
-  --color-nav-bg: #FFA4A4;
 } */
+
+:root {
+  --color-bg: white;
+  --color-accent: white;
+  --color-main-bg: linear-gradient( 90.2deg,  #01458d -0.4%, rgb(210, 210, 210) 80.1% );
+  --color-secondary:linear-gradient( 90.2deg,  #01458d -0.4%, #314964 90.1% );
+  --color-text: #00000;
+  --color-bg-dark: #c5d8d8;
+  --color-nav-bg: rgb(224, 233, 250);
+}
 
 html {
   font-size: 1rem;
@@ -27,8 +27,7 @@ html {
 
 body {
   font-family: 'Rubik', sans-serif;
-  background: #FAF8F1;
-  color: #334443;
+  background: var(--color-bg);
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -42,7 +41,7 @@ body {
 .app-container {
   display: flex;
   height: 100vh;
-  background: var(--color-primary);
+  background: var(--color-main-bg);
   transition: all 0.5s ease-in-out;
 }
 
