@@ -80,8 +80,18 @@
   display: block;
 }
 
+.drawer-profile-crafted {
+  margin-top: 2.5rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-bg);
+  letter-spacing: 0.5px;
+}
+
 .drawer-profile-name {
-  margin-top: 2rem;
+  margin-top: 0.3rem;
   width: 100%;
   text-align: center;
   font-size: 1.5rem;
@@ -94,7 +104,7 @@
   margin-top: 0.5rem;
   width: 100%;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--color-accent);
   letter-spacing: 0.3px;
@@ -105,6 +115,8 @@
   justify-content: center;
   gap: 1.2rem;
   margin: 1.2rem 0 0.5rem 0;
+  color: #ffffff;
+  filter: brightness(0) invert(1);
 }
 
 .drawer-social-icon {
@@ -119,7 +131,7 @@
 .drawer-social-icon:hover {
   /* background: var(--color-accent); */
   color: var(--color-secondary);
-  box-shadow: 0 0px 0.8px var(--color-accent);
+  box-shadow: 0 1px 1px var(--color-accent);
   border-radius: 5px;
 
 }
@@ -128,7 +140,7 @@
   display: block;
   margin: 2rem auto 0 auto;
   padding: 0.7rem 2rem;
-  background: transparent;
+  background: #ffffff09;
   color: var(--color-accent);
   border: none;
   border-radius: 8px;
@@ -136,8 +148,8 @@
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.40);
-  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
+  transition: background 0.3s;
   cursor: pointer;
    /* hide solid text color */
   

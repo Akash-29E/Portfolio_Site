@@ -23,8 +23,10 @@ export default function MainContent() {
 
     return (
         <div style={{ width: '100%' }}>
-            <TopNavBar func={handleTabSelect} />
-            <div className='content-area'>
+            <div className="nav-bar">
+                <TopNavBar func={handleTabSelect} current={selectedTab} />
+            </div>
+            <div className={`content-area ${selectedTab === 0 ? 'no-radius' : ''}`}>
                 <div key={selectedTab} className="tab-transition tab-fade-in">
                     {tabContent}
                 </div>

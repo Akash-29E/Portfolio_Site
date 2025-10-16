@@ -12,6 +12,7 @@ export default function SideDrawer() {
               className="drawer-profile-img"
             />
           </div>
+          <div className="drawer-profile-crafted">Crafted by</div>
           <div className="drawer-profile-name">Akash Parmar</div>
           <div className="drawer-profile-designation">Web Developer</div>
             <div className="drawer-profile-socials">
