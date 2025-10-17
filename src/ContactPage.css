@@ -10,6 +10,23 @@
   gap: 1rem;
 }
 
+.copy-status {
+  font-size: 0.8rem;
+  color: var(--color-secondary);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.18s ease, visibility 0.18s;
+  pointer-events: none;
+}
+
+/* show status only when hovering or focusing the copy button (icon) */
+.contact-flex button:hover + .copy-status,
+.contact-flex button:focus + .copy-status {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .contact-flex p {
   
   justify-content: center;

@@ -14,10 +14,11 @@
 :root {
   --color-bg: white;
   --color-accent: white;
-  --color-main-bg: linear-gradient( 90.2deg,  #012e5d -0.4%, #4d007a 80.1% );
-  --color-secondary:linear-gradient( 90.2deg,  #01458d -0.4%, #5054b8 90.1% );
+  --color-main-bg:
+    linear-gradient(30.2deg, #062a56d3 -0.4%, #4a0870d3 60.1%),
+    url('./noise.svg');
   --color-text: #00000;
-  --color-bg-dark: #c5d8d8;
+  --color-bg-dark: #7f4bc01a;
   --color-nav-bg: rgb(224, 233, 250);
 }
 

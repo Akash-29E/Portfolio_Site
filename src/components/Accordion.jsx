@@ -15,7 +15,6 @@ export default function MUIAccordion({ title, children }) {
         width: '100%',
         backgroundColor: 'var(--color-bg)',
         boxShadow: 'none',
-
         marginBottom: '1rem',
         '&.MuiAccordion-root': {
           borderBottom: open ? 'none' : 'none',
@@ -36,6 +35,8 @@ export default function MUIAccordion({ title, children }) {
           backgroundColor: 'var(--color-bg-dark)',
           color: 'var(--color-primary)',
           fontWeight: 500,
+          borderRadius: '15px',
+          backdropFilter: 'blur(10px)',
           fontSize: '0.95rem',
           width: '100%',
           fontFamily: `'Rubik', 'Quicksand', sans-serif`,

@@ -50,7 +50,7 @@
 .top-nav-bar ul li {
   flex: 1;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 20px;
   transition: 0.3s;
 }
 
@@ -63,7 +63,7 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
-  border-radius: 10px;
+
   transition: background 0.3s;
   height: 100%;
   justify-content: space-evenly;

@@ -45,8 +45,8 @@ export default function ContactPage() {
                             style={{ display: 'block' }}
                         />
                     </button>
-                    <span style={{ color: 'green', fontSize: '0.9rem', marginLeft: '0.25rem' }}>
-                        {copied ? 'Copied' : '<- Copy'}
+                    <span className='copy-status'>
+                        {copied ? 'COPIED' : 'COPY'}
                     </span>
                 </p>
             </div>
