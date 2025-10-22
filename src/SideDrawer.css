@@ -172,6 +172,7 @@
   justify-content: end;
   font-size: 0.8rem;
   color: var(--color-bg);
+  padding-top: 4rem;
   text-align:center;
   display: none; /* hidden by default */
 }
