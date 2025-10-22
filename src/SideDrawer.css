@@ -2,6 +2,7 @@
 .side-drawer {
   width: 25%;
   /* background: var(--color-primary); */
+  height: 100%;
   padding: 2rem 1rem;
   box-shadow: 2px 0 8px rgba(52, 101, 109, 0.08);
   display: flex;
@@ -11,6 +12,7 @@
   /* border-top-right-radius: 20px;
   border-bottom-right-radius: 20px; */
   overflow: visible;
+  position: relative; /* for absolute positioning of bottom element */
 }
 
 .drawer-img-container {
@@ -163,4 +165,23 @@
   /* background-clip: text;
   color: transparent;
   -webkit-background-clip: text; */
+}
+
+.drawer-profile-bottom {
+  /* position: relative; */
+  justify-content: end;
+  font-size: 0.8rem;
+  color: var(--color-bg);
+  text-align:center;
+  display: none; /* hidden by default */
+}
+
+/* Show only on screens smaller than 550px */
+@media only screen and (max-width: 550px) {
+  .drawer-profile-bottom {
+    display: flex;
+    font-style: italic;
+    color: gray;
+    font-weight: 350;
+  }
 }

@@ -25,6 +25,7 @@ export default function SideDrawer() {
             </div>
           <a href="/JohnDoeCV.pdf" download className="drawer-download-btn">Download CV</a>
         </div>
+          <div className="drawer-profile-bottom">Use bigger screen for better experience.</div>
       </aside>
         </>
     )

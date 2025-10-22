@@ -44,16 +44,15 @@ body {
   height: 100vh;
   background: var(--color-main-bg);
   transition: all 0.5s ease-in-out;
+  width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  .app-container {
-    background-color: lightblue;
+@media only screen and (max-width: 550px) {
+  .maincontent {
+    visibility: hidden;
+    width: 0 !important;
   }
-}
-
-@media (max-width: 50vw) {
-  html {
-    font-size: 0.4rem;
+  .side-drawer {
+    width: 100% !important;
   }
 }

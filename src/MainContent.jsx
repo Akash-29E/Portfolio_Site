@@ -22,7 +22,7 @@ export default function MainContent() {
     else if (selectedTab === 4) tabContent = <ContactPage />;
 
     return (
-        <div style={{ width: '100%' }}>
+        <div className='maincontent' style={{ width: '100%' }}>
             <div className="nav-bar">
                 <TopNavBar func={handleTabSelect} current={selectedTab} />
             </div>
