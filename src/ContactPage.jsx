@@ -20,29 +20,20 @@ export default function ContactPage() {
         <main className="main-content">
             <div className="contact-flex">
                 <h1>Contact</h1>
-                <p style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', margin: 0 }}>
+                <p className="contact-email-line">
                     {email}
                     <button
                         onClick={handleCopy}
                         aria-label="Copy email"
                         title={copied ? 'Copied' : 'Copy email'}
-                        style={{
-                            background: 'transparent',
-                            border: 'none',
-                            padding: 0,
-                            marginLeft: '0.25rem',
-                            cursor: 'pointer',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                        }}
+                        className="copy-button"
                     >
-                        {/* use SVG from public folder */}
                         <img
                             src={'./copyIcon.svg'}
                             alt="copy"
                             width="18"
                             height="18"
-                            style={{ display: 'block' }}
+                            className="copy-icon"
                         />
                     </button>
                     <span className='copy-status'>

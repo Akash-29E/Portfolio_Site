@@ -9,7 +9,7 @@ export default function PortfolioPage() {
 
     return (
         <main
-            className="main-content"
+            className="portfolio-main-content"
             style={{ paddingLeft: '1.5rem', paddingTop: '1.5rem' }} /* added top and left space */
         >
             <header style={{ width: '100%', marginBottom: '1.5rem' }}>

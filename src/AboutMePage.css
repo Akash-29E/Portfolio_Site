@@ -1,9 +1,7 @@
-.main-content {
-  box-sizing: border-box;
-  width: 100%;
-  justify-content: start;
-  min-height: 92vh; /* Adjust based on your navbar height */
-  overflow-y: auto;
+.description{
+  font-size: 1.1rem;
+  line-height: 1.6;
+  height: 100%;
 }
 
 .aboutme-flex {

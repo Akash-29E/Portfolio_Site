@@ -61,7 +61,7 @@
     transform: translate(-50%, -50%) scale(1);
   }
   30% {
-    opacity: 0.2;
+    opacity: 0.3;
     transform: translate(-50%, -50%) scale(1.2);
   }
   100% {
@@ -83,7 +83,7 @@
 }
 
 .drawer-profile-crafted {
-  margin-top: 2.5rem;
+  margin-top: 2.9rem;
   width: 100%;
   text-align: center;
   font-size: 0.8rem;
@@ -143,7 +143,7 @@
   margin: 2rem auto 0 auto;
   padding: 0.7rem 2rem;
   background: #ffffff09;
-  color: var(--color-accent);
+  color: var(--color-bg);
   border: none;
   border-radius: 8px;
   font-size: 1rem;

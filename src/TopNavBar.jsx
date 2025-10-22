@@ -31,16 +31,7 @@ export default function TopNavBar({ func, current }) {
             <span className="nav-label">Resume</span>
           </div>
         </li>
-        <li onClick={() => func(3)} className={current === 3 ? 'active' : ''}>
-          <div className="nav-item">
-            <span className="nav-icon">
-              {/* Portfolio/Briefcase icon */}
-              <img src="portfolio.svg" style={{ width: '24px', height: '24px' }} alt="Portfolio icon" />
-            </span>
-            <span className="nav-label">Portfolio</span>
-          </div>
-        </li>
-        <li onClick={() => func(4)}  className={current === 4 ? 'active' : ''}>
+        <li onClick={() => func(3)}  className={current === 3 ? 'active' : ''}>
           <div className="nav-item">
             <span className="nav-icon">
               {/* Contact/Mail icon */}

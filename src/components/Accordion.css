@@ -2,3 +2,76 @@
   display: none !important;
   border-radius: 10px;
 }
+
+.custom-accordion {
+  width: 100% !important;
+  background-color: var(--color-bg) !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem !important;
+  border-bottom: none !important;
+}
+
+.accordion-summary {
+  background-color: var(--color-bg-dark) !important;
+  color: var(--color-primary) !important;
+  font-weight: 500 !important;
+  border-radius: 15px !important;
+  backdrop-filter: blur(10px) !important;
+  font-size: 0.95rem !important;
+  width: 100% !important;
+  font-family: 'Rubik', 'Quicksand', sans-serif !important;
+}
+
+.accordion-summary .MuiAccordionSummary-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  flex: 1 !important;
+}
+
+.expand-icon {
+  font-size: 1rem !important;
+  font-weight: bold !important;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.accordion-title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.accordion-title {
+  font-weight: 470;
+  font-size: 1rem;
+}
+
+.accordion-subtitle {
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: var(--color-text);
+  margin-top: 0.25rem;
+}
+
+.accordion-years {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+  padding-right: 1rem;
+}
+
+.accordion-details {
+  background-color: var(--color-bg) !important;
+  color: var(--color-primary) !important;
+}
+
+.css-1808mag-MuiPaper-root-MuiAccordion-root::before {
+  display: none !important;
+  /* border-radius: 10px; */
+}

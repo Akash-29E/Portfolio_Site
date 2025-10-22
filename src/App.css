@@ -13,11 +13,9 @@
 
 :root {
   --color-bg: white;
-  --color-accent: white;
-  --color-main-bg:
-    linear-gradient(30.2deg, #062a56d3 -0.4%, #4a0870d3 60.1%),
-    url('./noise.svg');
-  --color-text: #00000;
+  --color-accent: #f4ddfb;
+  --color-main-bg:linear-gradient(-45deg, #b65e00, #ac0d4a, #0e7aa1, #0e9273);
+  --color-text: #000000;
   --color-bg-dark: #7f4bc01a;
   --color-nav-bg: rgb(224, 233, 250);
 }
@@ -44,8 +42,35 @@ body {
   display: flex;
   height: 100%;
   background: var(--color-main-bg);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
   transition: all 0.5s ease-in-out;
   width: 100%;
+}
+
+.main-content {
+  box-sizing: border-box;
+  width: 100%;
+  /* justify-content: start; */
+  min-height: 92vh; /* Adjust based on your navbar height */
+  align-items: flex-start;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  /* border-radius: 10px; */
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media only screen and (max-width: 550px) {

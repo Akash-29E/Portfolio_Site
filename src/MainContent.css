@@ -9,6 +9,7 @@
 }
 .content-area {
   flex: 1;
+  width: 100%;
   /* padding: 1rem; */
   overflow-y: auto;
   background: var(--color-bg);

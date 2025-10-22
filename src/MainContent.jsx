@@ -18,11 +18,11 @@ export default function MainContent() {
     if (selectedTab === 0) tabContent = <HomePage />;
     else if (selectedTab === 1) tabContent = <AboutMePage />;
     else if (selectedTab === 2) tabContent = <ResumePage />;
-    else if (selectedTab === 3) tabContent = <PortfolioPage />;
-    else if (selectedTab === 4) tabContent = <ContactPage />;
+    else if (selectedTab === 3) tabContent = <ContactPage />;
+    else if (selectedTab === 11) tabContent = <PortfolioPage />;
 
     return (
-        <div className='maincontent' style={{ width: '100%' }}>
+        <div className='maincontent' style={{ width: '75%' }}>
             <div className="nav-bar">
                 <TopNavBar func={handleTabSelect} current={selectedTab} />
             </div>

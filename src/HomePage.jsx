@@ -9,9 +9,16 @@ export default function HomePage() {
                         <p>
                             Web Developer
                         </p>
+                        
+                        <Accordion title={'JavaScript | React | Node.js | HTML | CSS'}>
                         <p>
-                             JavaScript | React | Node.js | HTML | CSS
+                             MongoDB | Mongoose | Middleware | RESTful Routing
                         </p>
+                        <p>
+                             AXIOS | Express.js | Authentication | Vite | Material UI
+                        </p>
+                        </Accordion>
+                        
             </div>
         </main>
     );

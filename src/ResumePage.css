@@ -1,19 +1,3 @@
-.main-content {
-  width: 100%;
-  background: var(--color-bg);
-  color: var(--color-primary);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  border-radius: 10px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  height: 92vh;
-  padding: 0rem;
-  margin: 0;
-}
-
 .cv-section {
   flex: 1;
   display: flex;
@@ -35,8 +19,8 @@
 }
 
 .cv-section ul {
-  list-style: none;
-  padding: 0;
+  /* list-style: none; */
+  padding-left: 1rem;
   margin: 0;
 }
 
@@ -49,6 +33,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
+  list-style: none;
 }
 
 .cv-skills-list li {
