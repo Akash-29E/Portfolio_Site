@@ -162,7 +162,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Akash Parmar - [mail@akashparmar.me](mailto:mail@akashparmar.me)
 
-Project Link: [https://github.com/yourusername/portfolio-website](https://github.com/yourusername/portfolio-website)
+Project Link: [https://github.com/Akash-29E/Portfolio_Site](https://github.com/Akash-29E/Portfolio_Site)
 
 ## 🙏 Acknowledgments
 
