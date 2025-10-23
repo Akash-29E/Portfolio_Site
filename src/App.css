@@ -73,6 +73,10 @@ body {
     }
 }
 
+.css-1pug5wj::before {
+  display: none !important;
+}
+
 @media only screen and (max-width: 550px) {
   .maincontent {
     visibility: hidden;
