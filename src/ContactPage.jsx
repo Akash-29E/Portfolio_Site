@@ -19,7 +19,7 @@ export default function ContactPage() {
     return (
         <main className="main-content">
             <div className="contact-flex">
-                <h1>Contact</h1>
+                <h1>Contact 📧</h1>
                 <p className="contact-email-line">
                     {email}
                     <button

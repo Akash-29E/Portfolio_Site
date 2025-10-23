@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -6,6 +6,15 @@ import './Accordion.css';
 
 export default function MUIAccordion({ title, subtitle, years, children }) {
   const [open, setOpen] = useState(true);
+
+  useEffect(() => {
+    const handleToggleAll = (event) => {
+      setOpen(event.detail.expand);
+    };
+
+    window.addEventListener('toggleAllAccordions', handleToggleAll);
+    return () => window.removeEventListener('toggleAllAccordions', handleToggleAll);
+  }, []);
 
   return (
     <Accordion

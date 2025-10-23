@@ -69,6 +69,23 @@
 .accordion-details {
   background-color: var(--color-bg) !important;
   color: var(--color-primary) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 1rem !important;
+}
+
+.accordion-details img {
+  align-self: flex-end;
+  max-width: 150px;
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* Ensure content flows around the image */
+.accordion-details > *:not(img) {
+  flex: 1;
 }
 
 .css-1808mag-MuiPaper-root-MuiAccordion-root::before {

@@ -23,7 +23,7 @@ export default function SideDrawer() {
               <img src="./github.svg" alt="GitHub" width="24" height="24" style={{ display: 'block' }} />
             </a>
           </div>
-          <a href="/JohnDoeCV.pdf" download className="drawer-download-btn">Download CV</a>
+          <a href="./Akash_Parmar_CV.pdf" download className="drawer-download-btn">Download CV</a>
         </div>
         <div className="drawer-profile-bottom">Use bigger screen for better experience.</div>
       </aside>
