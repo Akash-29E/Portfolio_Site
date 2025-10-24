@@ -90,12 +90,12 @@ export default function ResumePage() {
                 <h1>Certifications</h1>
                 <Accordion title="The Web Developer Bootcamp 2025" years="September 2025" subtitle={'Udemy'}>
                     
-                        <a href="https://www.udemy.com/certificate/UC-002a37d3-5d28-449d-b23f-63afb0b5556d/">Certificate</a>
-                    <img src="./WebDevUdemy_QR.png" alt="Web Dev Bootcamp Certificate QR Code Image" />
+                        <a href="https://www.udemy.com/certificate/UC-002a37d3-5d28-449d-b23f-63afb0b5556d/" target="_blank"><img src="./WebDev_Certi.jpg" alt="Web Dev Bootcamp Certificate QR Code Image" /></a>
+                    
                 </Accordion>
                 <Accordion title="Selenium Python - Step by Step for Beginners with Framework" years="Mar 2021" subtitle={'Udemy'}>
-                        <a href="https://www.udemy.com/certificate/UC-120cc502-c868-4ecd-8c05-953b417dfae5/">Certificate</a>
-                    <img src="./SeleniupPythonUdemy_QR.png" alt="Selenium Python Certificate QR Code Image" />
+                        <a href="https://www.udemy.com/certificate/UC-120cc502-c868-4ecd-8c05-953b417dfae5/" target="_blank"><img src="./Selenium_Certi.jpg" alt="Selenium Python Certificate QR Code Image" /></a>
+                    
                 </Accordion>
                 <h1>Skills</h1>
                 <ul className="cv-skills-list">

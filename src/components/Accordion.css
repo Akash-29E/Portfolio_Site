@@ -75,17 +75,26 @@
   gap: 1rem !important;
 }
 
-.accordion-details img {
-  align-self: flex-end;
-  max-width: 150px;
+.accordion-details a  {
+  width: 100%;
   height: auto;
-  border-radius: 12px;
-  flex-shrink: 0;
+  /* border-radius: 8px; */
+  /* margin-top: 1rem; */
+  
+}
+.accordion-details a img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  /* margin-top: 1rem; */
+  
 }
 
-/* Ensure content flows around the image */
+/* Ensure text content appears before images */
 .accordion-details > *:not(img) {
   flex: 1;
+  order: 1;
 }
 
 .css-1808mag-MuiPaper-root-MuiAccordion-root::before {
