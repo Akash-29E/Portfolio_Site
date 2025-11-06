@@ -81,7 +81,7 @@
 .top-nav-bar ul li:not(.active):hover {
   background-color: #f0f8ff17;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(55px);
   -webkit-backdrop-filter: blur(5px);
 }
 
@@ -94,7 +94,7 @@
 
 .active ul li:hover {
 box-shadow: none;
-background-color: #f0f8ff17;
+background-color: #007ae5;
 }
 
 .top-nav-bar ul li .nav-icon {

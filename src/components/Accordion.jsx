@@ -4,7 +4,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import './Accordion.css';
 
-export default function MUIAccordion({ title, subtitle, years, children }) {
+export default function MUIAccordion({ id, title, subtitle, years, children, onStateChange }) {
   const [open, setOpen] = useState(true);
 
   useEffect(() => {
@@ -16,10 +16,21 @@ export default function MUIAccordion({ title, subtitle, years, children }) {
     return () => window.removeEventListener('toggleAllAccordions', handleToggleAll);
   }, []);
 
+  // Notify parent component when state changes
+  useEffect(() => {
+    if (onStateChange && id) {
+      onStateChange(id, open);
+    }
+  }, [open, onStateChange, id]);
+
+  const handleToggle = () => {
+    setOpen(!open);
+  };
+
   return (
     <Accordion
       expanded={open}
-      onChange={() => setOpen(!open)}
+      onChange={handleToggle}
       className="custom-accordion"
     >
       <AccordionSummary

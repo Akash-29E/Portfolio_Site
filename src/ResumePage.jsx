@@ -1,15 +1,40 @@
 import './ResumePage.css';
 import Accordion from './components/Accordion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function ResumePage() {
     const [allExpanded, setAllExpanded] = useState(true);
+    const [accordionStates, setAccordionStates] = useState({});
+
+    // Update button text based on accordion states
+    useEffect(() => {
+        const states = Object.values(accordionStates);
+        if (states.length > 0) {
+            const allOpen = states.every(state => state === true);
+            const allClosed = states.every(state => state === false);
+            
+            if (allOpen) {
+                setAllExpanded(true);
+            } else if (allClosed) {
+                setAllExpanded(false);
+            }
+        }
+    }, [accordionStates]);
 
     const handleExpandAll = () => {
-        setAllExpanded(!allExpanded);
+        const newState = !allExpanded;
+        setAllExpanded(newState);
         // Trigger custom event to communicate with accordions
         window.dispatchEvent(new CustomEvent('toggleAllAccordions', { 
-            detail: { expand: !allExpanded } 
+            detail: { expand: newState } 
+        }));
+    };
+
+    // Handle individual accordion state changes
+    const handleAccordionChange = (id, isOpen) => {
+        setAccordionStates(prev => ({
+            ...prev,
+            [id]: isOpen
         }));
     };
 
@@ -25,9 +50,14 @@ export default function ResumePage() {
             <section className="cv-section">
                 <div className="section-header">
                     <h1>Experience</h1>
-                    
                 </div>
-                <Accordion title="Web Developer" years="(2024 - Present)" subtitle={'Freelancer'}>
+                <Accordion 
+                    id="exp-1"
+                    title="Web Developer" 
+                    years="(2024 - Present)" 
+                    subtitle={'Freelancer'}
+                    onStateChange={handleAccordionChange}
+                >
                     <ul>
                         <li>Developed and deployed responsive web applications using React, Node.js, Express.js, and MongoDB, focusing on
                             clean design and thoughtful UX for scalable, user-focused platforms.</li>
@@ -44,7 +74,13 @@ export default function ResumePage() {
                         </li>
                     </ul>
                 </Accordion>
-                <Accordion title="Quality Assurance Analyst" years="(2021 - 2024)" subtitle={'Broadridge Financial Solutions, Toronto'}>
+                <Accordion 
+                    id="exp-2"
+                    title="Quality Assurance Analyst" 
+                    years="(2021 - 2024)" 
+                    subtitle={'Broadridge Financial Solutions, Toronto'}
+                    onStateChange={handleAccordionChange}
+                >
                     <ul>
                         <li>Conducted performance testing and defect analysis for financial applications, ensuring stable and scalable systems.</li>
                         <li>Collaborated with developers to resolve bugs and enhance system reliability, supporting banking clients with
@@ -52,7 +88,13 @@ export default function ResumePage() {
                         <li>Utilized SQL for data fixes and validation, contributing to robust back-end systems.</li>
                     </ul>
                 </Accordion>
-                <Accordion title="Software Quality Assurance Analyst" years="(2018 - 2019)" subtitle={'Lodestone Software Services (Tech Mahindra), Ahmedabad'}>
+                <Accordion 
+                    id="exp-3"
+                    title="Software Quality Assurance Analyst" 
+                    years="(2018 - 2019)" 
+                    subtitle={'Lodestone Software Services (Tech Mahindra), Ahmedabad'}
+                    onStateChange={handleAccordionChange}
+                >
                     <ul>
                         <li>Led a team of 5 QA professionals, creating test plans and executing manual and automated tests with Selenium to
                             ensure application stability.</li>
@@ -61,7 +103,13 @@ export default function ResumePage() {
                     </ul>
                 </Accordion>
                 <h1>Education</h1>
-                <Accordion title="Enterprise Content Management (Post Degree Credential)" years="(2019 – 2021)" subtitle={'Conestoga College, Kitchener, ON'}>
+                <Accordion 
+                    id="edu-1"
+                    title="Enterprise Content Management (Post Degree Credential)" 
+                    years="(2019 – 2021)" 
+                    subtitle={'Conestoga College, Kitchener, ON'}
+                    onStateChange={handleAccordionChange}
+                >
                     <ul>
                         <li>GPA: <b>3.8</b> (Distinction)</li>
                         <li>Graduated with Honors</li>
@@ -74,7 +122,13 @@ export default function ResumePage() {
                         </ul>
                     </ul>
                 </Accordion>
-                <Accordion title="Computer Science & Engineering (Bachelor's Degree)" years="(2012 - 2017)" subtitle={'Gujarat Technological University, India'}>
+                <Accordion 
+                    id="edu-2"
+                    title="Computer Science & Engineering (Bachelor's Degree)" 
+                    years="(2012 - 2017)" 
+                    subtitle={'Gujarat Technological University, India'}
+                    onStateChange={handleAccordionChange}
+                >
                     <ul>
                         <li>GPA: <b>3.0</b></li>
                         <li>Relevant coursework:</li>
@@ -88,12 +142,24 @@ export default function ResumePage() {
                     </ul>
                 </Accordion>
                 <h1>Certifications</h1>
-                <Accordion title="The Web Developer Bootcamp 2025" years="September 2025" subtitle={'Udemy'}>
+                <Accordion 
+                    id="cert-1"
+                    title="The Web Developer Bootcamp 2025" 
+                    years="September 2025" 
+                    subtitle={'Udemy'}
+                    onStateChange={handleAccordionChange}
+                >
                     
                         <a href="https://www.udemy.com/certificate/UC-002a37d3-5d28-449d-b23f-63afb0b5556d/" target="_blank"><img src="./WebDev_Certi.jpg" alt="Web Dev Bootcamp Certificate QR Code Image" /></a>
                     
                 </Accordion>
-                <Accordion title="Selenium Python - Step by Step for Beginners with Framework" years="Mar 2021" subtitle={'Udemy'}>
+                <Accordion 
+                    id="cert-2"
+                    title="Selenium Python - Step by Step for Beginners with Framework" 
+                    years="Mar 2021" 
+                    subtitle={'Udemy'}
+                    onStateChange={handleAccordionChange}
+                >
                         <a href="https://www.udemy.com/certificate/UC-120cc502-c868-4ecd-8c05-953b417dfae5/" target="_blank"><img src="./Selenium_Certi.jpg" alt="Selenium Python Certificate QR Code Image" /></a>
                     
                 </Accordion>
