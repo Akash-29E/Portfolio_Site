@@ -7,7 +7,7 @@ export default function SideDrawer() {
         <div className="drawer-img-container">
           <div className="profile-img-ripple">
             <img
-              src="./profile2.png"
+              src="./profile2.jpg"
               alt="Profile"
               className="drawer-profile-img"
             />
