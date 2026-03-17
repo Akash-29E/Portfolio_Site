@@ -21,12 +21,7 @@ export default function AboutMePage() {
                         </p>
                     </section>
                 </div>
-                <div className="aboutme-right">
-                    <div className="info-item"><strong>Age:</strong> 30</div>
-                    <div className="info-item"><strong>City:</strong> Kitchener, ON</div>
-                    <div className="info-item"><strong>Mail:</strong> mail@akashparmar.me</div>
-                    <div className="info-item"><strong>Phone:</strong> +1 437 987 2080</div>
-                </div>
+
             </div>
         </main>
     );

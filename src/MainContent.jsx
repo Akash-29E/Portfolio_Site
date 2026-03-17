@@ -3,7 +3,7 @@ import { useState } from 'react';
 import TopNavBar from './TopNavBar';
 import ResumePage from './ResumePage';
 import AboutMePage from './AboutMePage';
-import PortfolioPage from './PortfolioPage';
+import ProjectsPage from './ProjectsPage';
 import ContactPage from './ContactPage';
 import HomePage from './HomePage';
 
@@ -18,8 +18,8 @@ export default function MainContent() {
     if (selectedTab === 0) tabContent = <HomePage />;
     else if (selectedTab === 1) tabContent = <AboutMePage />;
     else if (selectedTab === 2) tabContent = <ResumePage />;
-    else if (selectedTab === 3) tabContent = <ContactPage />;
-    else if (selectedTab === 11) tabContent = <PortfolioPage />;
+    else if (selectedTab === 3) tabContent = <ProjectsPage />;
+    else if (selectedTab === 4) tabContent = <ContactPage />;
 
     return (
         <div className='maincontent' style={{ width: '75%' }}>
