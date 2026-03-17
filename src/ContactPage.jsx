@@ -122,7 +122,6 @@ export default function ContactPage() {
                                 {copied ? 'COPIED' : 'COPY'}
                             </span>
                         </p>
-                        <p className="contact-meta">Phone: +1 437 987 2080</p>
                         <p className="contact-meta">Location: Kitchener, ON (open to remote and hybrid roles)</p>
                         <p className="contact-meta">Typical response time: within 24 hours</p>
                     </article>
