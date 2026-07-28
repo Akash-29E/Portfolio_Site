@@ -48,7 +48,7 @@
   background: radial-gradient(circle, #FAEAB1 40%, #34656D 100%);
   opacity: 0.3;
   z-index: 0;
-  animation: ripple-wave 2.5s infinite linear;
+  animation: ripple-wave 6s infinite linear;
 }
 
 .profile-img-ripple::after {
