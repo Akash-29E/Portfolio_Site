@@ -54,7 +54,7 @@ export default function ResumePage() {
                 <Accordion 
                     id="exp-1"
                     title="Web Developer" 
-                    years="(2024 - Present)" 
+                    years="(2025 - Present)" 
                     subtitle={'Freelancer'}
                     onStateChange={handleAccordionChange}
                 >
@@ -77,7 +77,7 @@ export default function ResumePage() {
                 <Accordion 
                     id="exp-2"
                     title="Quality Assurance Analyst" 
-                    years="(2021 - 2024)" 
+                    years="(2021 - 2026)" 
                     subtitle={'Broadridge Financial Solutions, Toronto'}
                     onStateChange={handleAccordionChange}
                 >
