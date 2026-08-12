@@ -51,7 +51,7 @@ export default function ResumePage() {
                 <div className="section-header">
                     <h1>Experience</h1>
                 </div>
-                <Accordion 
+                {/* <Accordion 
                     id="exp-1"
                     title="Web Developer" 
                     years="(2025 - Present)" 
@@ -73,7 +73,7 @@ export default function ResumePage() {
                             Explored AI/ML concepts to embed intelligent features into user flows, aligning with behavioral finance principles.
                         </li>
                     </ul>
-                </Accordion>
+                </Accordion> */}
                 <Accordion 
                     id="exp-2"
                     title="Quality Assurance Analyst" 
