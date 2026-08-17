@@ -1,7 +1,7 @@
 import './ContactPage.css';
 import { useState } from 'react';
 
-const WEB3FORMS_KEY = '4ae35642-8266-4ed3-98de-0d3272bbb3c4'; // ← replace with key from web3forms.com
+const WEB3FORMS_KEY = '4ae35642-8266-4ed3-98de-0d3272bbb3c4';
 
 const EMPTY_FORM = { name: '', email: '', message: '' };
 
@@ -26,7 +26,7 @@ export default function ContactPage() {
 
     const [form, setForm] = useState(EMPTY_FORM);
     const [errors, setErrors] = useState({});
-    const [submitState, setSubmitState] = useState('idle'); // idle | sending | success | error
+    const [submitState, setSubmitState] = useState('idle');
 
     const handleCopy = async () => {
         try {
@@ -80,10 +80,9 @@ export default function ContactPage() {
         <main className="main-content">
             <div className="contact-flex">
                 <header className="contact-header">
-                    <h1>Let&apos;s build something meaningful</h1>
+                    <h1>Let&apos;s build quality into every release</h1>
                     <p>
-                        I am available for web development projects, product improvements,
-                        and QA-informed code reviews.
+                        I&apos;m available for QA Engineer, Automation Engineer, Quality Analyst, and QA-focused development opportunities.
                     </p>
                 </header>
 
@@ -129,10 +128,11 @@ export default function ContactPage() {
                     <article className="contact-card">
                         <h2>What I Can Help With</h2>
                         <ul className="contact-list">
-                            <li>React front-end development and UI refinements</li>
-                            <li>Node.js and Express API integration</li>
-                            <li>Bug fixing, QA-focused testing, and performance tuning</li>
-                            <li>Portfolio, SaaS, and business website builds</li>
+                            <li>QA strategy and test planning</li>
+                            <li>UI and regression automation</li>
+                            <li>API validation and data checks</li>
+                            <li>Defect analysis and release readiness review</li>
+                            <li>Quality-focused web application improvements</li>
                         </ul>
                     </article>
                 </section>
@@ -191,7 +191,7 @@ export default function ContactPage() {
                                     id="cf-message"
                                     name="message"
                                     rows={5}
-                                    placeholder="Tell me about your project or what you need help with..."
+                                    placeholder="Tell me about your project, release needs, or QA opportunities..."
                                     value={form.message}
                                     onChange={handleChange}
                                     className={errors.message ? 'input-error' : ''}

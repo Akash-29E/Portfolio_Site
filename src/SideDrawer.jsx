@@ -14,7 +14,7 @@ export default function SideDrawer() {
           </div>
           <div className="drawer-profile-crafted">Crafted by</div>
           <div className="drawer-profile-name">Akash Parmar</div>
-          <div className="drawer-profile-designation">Web Developer</div>
+          <div className="drawer-profile-designation">QA Engineer &amp; Web Developer</div>
           <div className="drawer-profile-socials">
             <a href="https://www.linkedin.com/in/parmar-akash/" target="_blank" rel="noopener noreferrer" className="drawer-social-icon" aria-label="LinkedIn">
               <img src="./linkedin.svg" alt="LinkedIn" width="24" height="24" style={{ display: 'block' }} />

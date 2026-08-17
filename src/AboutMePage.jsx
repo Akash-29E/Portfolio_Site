@@ -1,27 +1,29 @@
 import './AboutMePage.css';
-import Accordion from './components/Accordion';
 
 export default function AboutMePage() {
     return (
         <main className="main-content">
             <div className="aboutme-flex">
                 <div className="aboutme-left">
-                    <section className='description'>
+                    <section className="description">
                         <h1>About Me 🌟</h1>
-                        <p>Hi, I’m Akash — a Quality Assurance Engineer turned Web Developer who loves transforming ideas into clean, responsive, and meaningful digital experiences. My journey started with breaking things to make them better — and now I build them better from the start.
+                        <p>
+                            Hi, I&apos;m Akash — a Quality Assurance Engineer with a strong foundation in web development and a passion for building reliable, user-friendly digital experiences.
                         </p>
                         <p>
-                            With a sharp eye for detail shaped by years in QA, I approach development with both precision and curiosity. Whether it’s designing intuitive front-end interfaces or crafting efficient back-end logic, I enjoy solving complex problems through simple, elegant code.
+                            My journey began in QA, where I learned to think critically about user flows, edge cases, defect prevention, and release quality. That mindset shaped how I approach development: I build with testability, usability, and performance in mind from the start.
                         </p>
                         <p>
-                            I’m passionate about creating web experiences that feel good — fast, accessible, and thoughtfully designed. I thrive in learning new technologies, collaborating with creative minds, and pushing every project a bit further than expected.
+                            Over time, I expanded my skill set into front-end and back-end development, which helped me bridge the gap between engineering and quality. I understand how issues are introduced, where they surface, and how to validate them before they reach users.
                         </p>
                         <p>
-                            When I’m not coding, I’m usually exploring design trends, refining personal projects, or chasing that perfect balance between logic and creativity — the art of building something that just works beautifully.
+                            I enjoy creating clean interfaces, troubleshooting complex issues, and ensuring that what ships is not only functional but dependable. Whether I&apos;m writing automation scripts, validating APIs, testing user journeys, or improving UI behaviour, I focus on the experience from the user&apos;s perspective.
+                        </p>
+                        <p>
+                            I&apos;m driven by quality, clarity, and continuous improvement. I value well-documented validation, thoughtful collaboration, and the ability to catch issues early so products can be delivered with confidence.
                         </p>
                     </section>
                 </div>
-
             </div>
         </main>
     );

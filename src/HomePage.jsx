@@ -1,26 +1,31 @@
 import './HomePage.css';
 
 const skills = [
-    'React', 'JavaScript', 'HTML', 'CSS', 'Vite',
-    'Node.js', 'Express.js', 'MongoDB', 'RESTful APIs',
-    'Bootstrap', 'Material UI', 'Python', 'Selenium', 'MySQL',
+    'Selenium', 'Playwright', 'Cypress', 'JavaScript', 'React',
+    'HTML', 'CSS', 'Python', 'Postman', 'SQL', 'Jira', 'Git',
+    'Regression Testing', 'API Testing', 'Defect Analysis', 'User Validation',
 ];
 
 const pillars = [
     {
-        icon: '🖥️',
-        title: 'Front-End',
-        points: ['React & component-driven UI', 'Responsive CSS & animations', 'Material UI & Bootstrap', 'Vite build tooling'],
+        icon: '🧪',
+        title: 'Quality Engineering',
+        points: ['Test strategy & risk-based validation', 'Defect prevention before release', 'Regression and cross-browser QA', 'User-impact driven quality checks'],
     },
     {
         icon: '⚙️',
-        title: 'Back-End',
-        points: ['Node.js & Express.js APIs', 'MongoDB & Mongoose', 'Authentication & middleware', 'RESTful routing & AXIOS'],
+        title: 'Automation & Validation',
+        points: ['Selenium and UI automation', 'API and data validation', 'Repeatable regression coverage', 'Faster, more reliable release confidence'],
     },
     {
         icon: '🔍',
-        title: 'QA & Testing',
-        points: ['Selenium test automation', 'Performance & regression testing', 'Defect analysis & SQL validation', 'Agile & cross-team collaboration'],
+        title: 'Defect Analysis',
+        points: ['Root cause investigation', 'SQL-based validation', 'Workflow and edge-case testing', 'Clear reporting for faster fixes'],
+    },
+    {
+        icon: '💡',
+        title: 'User-Centred QA',
+        points: ['Usability and flow validation', 'Edge case detection early', 'Experience-focused product testing', 'Reliable outcomes for real users'],
     },
 ];
 
@@ -30,10 +35,10 @@ export default function HomePage() {
             <div className="home-hero">
                 <p className="home-greeting">Hi, I&apos;m</p>
                 <h1 className="home-name">Akash Parmar</h1>
-                <p className="home-title">Web Developer &amp; QA Engineer</p>
+                <p className="home-title">QA Engineer | Automation Specialist | Web Developer</p>
                 <p className="home-tagline">
-                    Building clean, fast, and user-focused web experiences —
-                    with a QA mindset baked in from day one.
+                    I design, build, and validate digital experiences with a quality-first mindset —
+                    making sure every user flow is reliable, testable, and ready for real-world use.
                 </p>
                 <div className="home-cta-row">
                     <a className="home-cta-primary" href="./Akash_Parmar_CV.pdf" download>

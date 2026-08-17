@@ -8,7 +8,7 @@ import ContactPage from './ContactPage';
 import HomePage from './HomePage';
 
 export default function MainContent() {
-    const [selectedTab, setSelectedTab] = useState(2);
+    const [selectedTab, setSelectedTab] = useState(0);
 
     const handleTabSelect = (index) => {
         setSelectedTab(index);

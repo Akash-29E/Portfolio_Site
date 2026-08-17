@@ -2,22 +2,15 @@ import './ProjectsPage.css';
 
 const projects = [
     {
-        name: 'Maptor',
-        url: 'https://maptor.ca/',
-        preview: '/https___maptor.jpg',
-        tagline: 'Plan your route, your way.',
-        techStack: 'React, JavaScript, Google Maps Integration',
-        description:
-            'Maptor lets you build a multi-stop route, automatically optimizes the stop order for the shortest path, and opens it instantly in Google Maps - no account needed.',
-    },
-    {
         name: 'Splitstar',
         url: 'https://www.splitstar.app/',
         preview: '/https___www.splitstar.jpg',
-        tagline: 'Split expenses with Splitstar',
-        techStack: 'React, JavaScript, Expense Tracking Workflows',
+        tagline: 'Expense splitting made simple',
+        techStack: 'React, JavaScript, UX validation, workflow testing',
         description:
-            'The easiest way to split bills, track expenses, and settle up with friends, family, and colleagues. No more awkward money conversations.',
+            'A user-facing app focused on simplifying shared expenses. My work emphasized validation of key user journeys, usability checks, and release confidence to ensure the experience remained smooth and dependable for end users.',
+        qaFocus:
+            'Quality focus: edge-case validation, flow testing, UI consistency checks, and user-impact review across core financial interactions.',
     },
 ];
 
@@ -25,8 +18,8 @@ export default function ProjectsPage() {
     return (
         <main className="projects-main-content">
             <header className="projects-header">
-                <h1>Projects</h1>
-                <p>Featured apps I have built and launched.</p>
+                <h1>Project Highlights</h1>
+                <p>Quality-focused product work that combines development, validation, and user experience thinking.</p>
             </header>
 
             <section className="projects-grid" aria-label="Project list">
@@ -54,6 +47,9 @@ export default function ProjectsPage() {
                             <strong>Tech stack:</strong> {project.techStack}
                         </p>
                         <p>{project.description}</p>
+                        <p>
+                            <strong>QA lens:</strong> {project.qaFocus}
+                        </p>
                         <a
                             href={project.url}
                             target="_blank"
